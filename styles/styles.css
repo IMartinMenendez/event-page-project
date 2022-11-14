@@ -1,5 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 5px;
+    outline: none;
+    background-color: white;
+    font-size: 14px;
+}
+
+.meeting {
+    width: 120px;
+    display: inline-block;
+    background: #D2DAFF;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  .party {
+    width: 120px;
+    display: inline-block;
+    background: #FFDDD2;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  .learning {
+    width: 120px;
+    display: inline-block;
+    background: #eef8ec;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+.group{
+    display: flex;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,3 +205,37 @@ ion-icon {
   color: white;
   font-size: 17px;
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
