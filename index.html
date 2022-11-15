@@ -12,26 +12,44 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <form>
+          <input class='inside-modal' type="text" id="name" name="newName" placeholder="Event name" required/>
+          <textarea class='inside-modal' name="description" id="newDescription" rows="8" placeholder="Event description"></textarea>
+              <div class="tags margin-bottom">
+                <div id='meeting' class="button">Meeting</div>
+                <div id='party' class="button">Party</div>
+                <div id='learning' class="button">Learning</div>
+            </div>
+            <input class='inside-modal' type="text" id="newImage" name="newImage" placeholder="Image URL" required/>
+            <div style="display: flex;">
+                <input class='inside-modal' type="number" id="price" name="newPrice" placeholder="Event price" required/>
+                <input class='inside-modal' type="date" id="newDate" name="newDate" placeholder="Event date" required/>
+            </div>
+            <button id="add-event" class="button center">
+                <ion-icon name="add-outline"></ion-icon> Add event
+            </button>
+        </form>
         </div>
       </div>
     <div class="container" id='event-container'>
         <div>
-        <h2 class="heading" style="text-align: center;">
-          Events
-        </h2>
-        <input type="text" id="name" name="name" placeholder="Filter by name" required></div>
+            <h2 class="heading" style="text-align: center;">
+            Events
+            </h2>
+            <input type="text" id="filterName" name="name" placeholder="Filter by name, description or price">
+        </div>
         <div class="tags">
-            <a id="myBtn" class="add-to-calender">
+            <a id="myBtn" class="button">
                 <ion-icon name="add-outline"></ion-icon> Add new
             </a>
-            <div class="meeting">Meeting</div>
-            <div class="party">Party</div>
-            <div class="learning">Learning</div>
+            <div id='meeting-filter' class="meeting">Meeting</div>
+            <div id='party-filter' class="party">Party</div>
+            <div id='learning-filter' class="learning">Learning</div>
         </div>
+        <div id="events"></div>
     </div>
-
       <script src="class/event.js"></script>
+      <script src="src/filtering.js"></script>
       <script src="main.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

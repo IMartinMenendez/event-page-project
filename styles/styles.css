@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import "filter.css";
 
-
-input {
+input, textarea {
     width: 100%;
     border: none;
     border-radius: 3px;
@@ -78,7 +78,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 905px;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
@@ -93,6 +93,7 @@ body {
   padding: 10px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 .event-card:hover {
   box-shadow: #cfd5e0 0 0 10px 5px;
@@ -106,6 +107,7 @@ body {
 }
 
 .date-time {
+  max-width: 99px;
   width: 200px;
   height: 80px;
   border-radius: 6px;
@@ -180,7 +182,16 @@ img{
   margin-top: 5px;
 }
 
-.add-to-calender {
+.center{
+  text-align: center;
+  margin: auto!important;
+}
+
+.margin-bottom{
+  margin-bottom: 5px;
+}
+
+.button {
   width: 120px;
   display: inline-block;
   background: #000000;
@@ -193,11 +204,11 @@ img{
   border-radius: 6px;
   margin: 0 10px;
 }
-.add-to-calender:hover {
+.button:hover {
   box-shadow: #cfd5e0 0 0 10px 5px;
   transform: scale(1.1);
 }
-.add-to-calender:hover ion-icon {
+.button:hover ion-icon {
   transform: rotate(360deg);
 }
 
@@ -223,7 +234,7 @@ ion-icon {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
   }
 
   .close {
@@ -238,4 +249,9 @@ ion-icon {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .inside-modal{
+    background-color:#f2f2f2;
+    margin: 5px;
   }

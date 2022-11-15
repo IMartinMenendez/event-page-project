@@ -1,12 +1,13 @@
 class Event {
 
-    constructor(date, name, description, image, price, attend ){
+    constructor(date, name, description, image, price, attend, tags ){
         this._date = date;
         this._name = name;
         this._description = description;
         this._image = image;
         this._price = price;
         this._attend = attend;
+        this._tags = tags;
     }
 
     set date(date){
@@ -55,6 +56,14 @@ class Event {
 
     get attend(){
         return this._attend;
+    }
+
+    set tags(tags){
+        this._tags = tags;
+    }
+
+    get tags(){
+        return this._tags;
     }
 
 }

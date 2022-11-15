@@ -1,0 +1,29 @@
+.meeting-pressed {
+    background-color: #BA94D1!important;
+}
+
+.party-pressed {
+    background-color: #FEBE8C!important;
+}
+
+.learning-pressed {
+    background-color: #BCEAD5!important;
+}
+
+.meeting-added{
+    color: black!important;
+    background-color: white!important;
+    border: black solid 1px;
+}
+
+.party-added{
+    color: black!important;
+    background-color: white!important;
+    border: black solid 1px;
+}
+
+.learning-added{
+    color: black!important;
+    background-color: white!important;
+    border: black solid 1px;
+}
