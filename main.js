@@ -5,7 +5,14 @@ const events =
     new Event(new Date(new Date() - Math.random()*(1e+12)),  "Wool Week", 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe similique officia nam atque voluptatem ad necessitatibus consequuntur, nostrum repellendus.',
     'https://images.pexels.com/photos/306046/pexels-photo-306046.jpeg?cs=srgb&dl=pexels-lukas-306046.jpg&fm=jpg&_gl=1*1gu8knw*_ga*MTI4NzI2MjI3Ni4xNjY4NDM2MDQ4*_ga_8JE65Q40S6*MTY2ODQ0MDM1OC4yLjAuMTY2ODQ0MDM1OC4wLjAuMA.', 20 , false, ['Meeting', 'Party']),
     new Event(new Date(new Date() - Math.random()*(1e+12)),  "Light park at Bergenhus Fortress", 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora saepe similique officia nam atque voluptatem ad necessitatibus consequuntur, nostrum repellendus.',
-    'https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 20, true, ['Meeting'] ),
+    'https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 12.50, false, ['Learning'] ),
+    new Event(new Date(new Date() - Math.random()*(1e+12)),  "Vivaldi - The Four Seasons", 'Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable. Trees delay fancy noise manor do as an small. Felicity now law securing breeding likewise extended and. Roused either who favour why ham.',
+    'https://images.pexels.com/photos/4028878/pexels-photo-4028878.jpeg?auto=compress&cs=tinysrgb&w=1600', 10 , false, ['Learning']),
+    new Event(new Date(new Date() - Math.random()*(1e+12)),  "London Comic Con Winter 2022", 'Also when you use plain Lorem ipsum text, your design will look like a million other designs out there. With Random Text Generator your designs will look more unique while still containing text which truly means nothing.',
+    'https://images.pexels.com/photos/7524996/pexels-photo-7524996.jpeg?auto=compress&cs=tinysrgb&w=1600', 0 , false, ['Party', 'Meeting']),
+    new Event(new Date(),  "Birthday party", 'Also when you use plain Lorem ipsum text, your design will look like a million other designs out there. With Random Text Generator your designs will look more unique while still containing text which truly means nothing.',
+    'https://images.pexels.com/photos/903400/pexels-photo-903400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 25 , false, ['Party', 'Learning']),
+
 ];
 
 
@@ -13,7 +20,8 @@ const eventContainer = document.getElementById('events');
 let displayBox;
 
 window.addEventListener("load", () => {
-    displayEvents(events);
+    createPages();
+    displayPageEvents(1);
 });
 
 function displayEvents(events){

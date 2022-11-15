@@ -2,6 +2,7 @@
 @import "filter.css";
 @import "modal.css";
 @import "inputs.css";
+@import "pagination.css";
 
 
 .group{
@@ -24,7 +25,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 905px;
+  max-width: 61%;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
