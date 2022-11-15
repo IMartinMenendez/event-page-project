@@ -1,0 +1,178 @@
+input, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 5px;
+    outline: none;
+    background-color: white;
+    font-size: 14px;
+}
+
+.meeting {
+    width: 120px;
+    display: inline-block;
+    background: #D2DAFF;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  .party {
+    width: 120px;
+    display: inline-block;
+    background: #FFDDD2;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  .learning {
+    width: 120px;
+    display: inline-block;
+    background: #eef8ec;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+
+  .tags{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event-card {
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .event-card:hover {
+    box-shadow: #cfd5e0 0 0 10px 5px;
+  }
+
+  .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .date-time {
+    max-width: 99px;
+    width: 200px;
+    height: 80px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+  }
+
+  img{
+      width: 20%;
+      border-radius: 15px;
+  }
+
+  .dt1 {
+      background: #E2C2B9;
+    }
+
+  .dt1 {
+    background: #eceff8;
+  }
+  .dt2 {
+    background: #f8ecf8;
+  }
+  .dt3 {
+    background: #f8ecec;
+  }
+  .dt4 {
+    background: #eef8ec;
+  }
+
+  .dt5 {
+      background: #FBFACD;
+    }
+    .dt6 {
+      background: #FFDDD2;
+    }
+    .dt7 {
+      background: #D2DAFF;
+    }
+    .dt8 {
+      background: #F7ECDE;
+    }
+    .dt9 {
+      background: #D6EFED;
+    }
+    .dt10 {
+      background: #FFD9C0;
+    }
+    .dt11{
+      background: #FFFBE9;
+    }
+    .dt12{
+      background: #F4DFBA;
+    }
+
+  .date {
+      text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .time {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .event-detail {
+    font-size: 12px;
+    color: #4b4b4b;
+    margin-top: 5px;
+  }
+
+  .button {
+    width: 120px;
+    display: inline-block;
+    background: #000000;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border-radius: 6px;
+    margin: 0 10px;
+  }
+  .button:hover {
+    box-shadow: #cfd5e0 0 0 10px 5px;
+    transform: scale(1.1);
+  }
+  .button:hover ion-icon {
+    transform: rotate(360deg);
+  }
+
+  ion-icon {
+    color: white;
+    font-size: 17px;
+  }
