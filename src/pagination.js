@@ -5,6 +5,7 @@ function calculatePages(){
 function createPages(){
     let totalPages = calculatePages();
     let paginationDiv = document.getElementById('pagination');
+    paginationDiv.innerHTML = '';
 
     for(let i = 0; i< totalPages; i++){
         let newPage = createTag('a', null, i + 1);
@@ -14,6 +15,8 @@ function createPages(){
         });
         paginationDiv.appendChild(newPage);
     }
+
+    return totalPages;
 
 }
 

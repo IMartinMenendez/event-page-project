@@ -17,9 +17,10 @@ document.querySelector('form').addEventListener('submit', (e) => {
 
     let newEvent = new Event(new Date(data.newDate), data.newName, data.description, data.newImage, data.newPrice, false, tags)
     events.push(newEvent);
-    console.log(events);
     clearScreen();
-    displayEvents(events);
+    let lastPage = createPages();
+    displayPageEvents(lastPage);
+    // displayEvents(events);
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
 });
