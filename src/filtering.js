@@ -46,8 +46,7 @@ let textInput = document.getElementById('filterName').addEventListener('keydown'
         evt.preventDefault();
         filterByText(evt.target.value);
     } else if(evt.key == 'Enter' && evt.target.value === ''){
-        clearScreen();
-        displayPageEvents(0);
+        displayPageEvents(1);
     }
 })
 
